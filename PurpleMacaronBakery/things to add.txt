@@ -1,0 +1,8 @@
+in this project I have to finish the products page.
+I can create a buying page.
+I must add the javascript with ejs (learn document.getElemnetById()).
+add the written comment to the events area with the node.
+
+add css to the buttons in the products page
+
+turn the comments to form
