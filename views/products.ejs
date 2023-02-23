@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>purple Macron Bakery - products</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/bakery-logo.jpg">
+    <link rel="stylesheet" href="/assets/allStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      #productsSubstance
+      {
+        margin-top: 17vh;
+      }
+      .invisible
+      {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('header') %> <!-- the header -->
+    <br><br><br>
+    <!-- products substance - start -->
+    <div id="productsSubstance" class="container">
+      <!-- line number 1 - start -->
+      <div class="container-fluid">
+        <div class="row">
+          <!-- product number 1 - start -->
+          <%- include('product' , {img: '/products-imgs/cheese-cake.webp' , name: 'cheesecake' , number: 1
+           , description: 'Sweet cheesecake with honey and strawberry above' , price: 13}) %> 
+          <!-- product number 1 - end -->
+          <!-- product number 2 - start -->
+          <%- include('product' , {img: '/products-imgs/avocado-sandwich.jpeg' , name: 'avocado sandwich' , number: 2
+           , description: 'crispy bread sandwich with avocado slices inside' , price: 5}) %> 
+          <!-- product number 2 - end -->
+          <!-- product number 3 - start -->
+          <%- include('product' , {img: '/products-imgs/chocolate-pastry.jpg' , name: 'chocolate pastry' , number: 3
+          , description: 'extra sweet chocolate pastry with touches of coffee' , price: 3}) %> 
+          <!-- product number 3 - end -->
+        </div>
+      </div>
+      <!-- line number 1 - end -->
+
+      <br><br>
+
+      <!-- line number 2 - start -->
+      <div class="container-fluid">
+        <div class="row">
+          <!-- product number 4 - start -->
+          <%- include('product' , {img: '/products-imgs/chocolate-cake.webp' , name: 'chocolate cake' , number: 4
+          , description: 'Chocolate cake coated in chocolate ganache' , price: 13}) %> 
+          <!-- product number 4 - end -->
+          <!-- product number 5 - start -->
+          <%- include('product' , {img: '/products-imgs/cheese-sandwich.jpg' , name: 'Cheese sandwich' , number: 5
+          , description: 'For a better morning, a rustic bun with cheese' , price: 4}) %> 
+          <!-- product number 5 - end -->
+          <!-- product number 6 - start -->
+          <%- include('product' , {img: '/products-imgs/pizza-pastry.jpg' , name: 'Pizza pastry' , number: 6
+          , description: 'Cheese pastry and pizza tomatoes sauce' , price: 6}) %> 
+          <!-- product number 6 - end -->
+        </div>
+      </div>
+      <!-- line number 2 - end -->
+      <br><br>
+      <!-- line number 3 - start -->
+      <div class="container-fluid">
+        <div class="row">
+          <!-- product number 7 - start -->
+          <%- include('product' , {img: '/products-imgs/strawberry-cake.jpg' , name: 'strawberry cake' , number: 7
+          , description: 'Strawberry cake with vanilla icing and fruits above' , price: 17}) %> 
+          <!-- product number 7 - end -->
+          <!-- product number 8 - start -->
+          <%- include('product' , {img: '/products-imgs/egg-sandwich.jpg' , name: 'egg sandwich' , number: 8
+          , description: 'Boiled egg sandwich, with vegetables' , price: 5}) %> 
+          <!-- product number 8 - end -->
+          <!-- product number 9 - start -->
+          <%- include('product' , {img: '/products-imgs/butter-pastry.jpg' , name: 'Butter pastry' , number: 9
+          , description: 'A croissant filled with butter just like in france' , price: 3}) %> 
+          <!-- product number 9 - end -->
+        </div>
+      </div>
+      <!-- line number 3 - end -->
+      <br><br>
+      <!-- line number 4 - start -->
+      <div class="container-fluid">
+        <div class="row">
+          <!-- product number 10 - start -->
+          <%- include('product' , {img: '/products-imgs/orange-cake.jpg' , name: 'orange cake' , number: 10
+          , description: 'orange Cake With jellatin layers inside' , price: 10}) %> 
+          <!-- product number 10 - end -->
+          <!-- product number 11 - start -->
+          <%- include('product' , {img: '/products-imgs/tomato-sandwich.jpg' , name: 'tomato sandwich' , number: 11
+          , description: 'Tomato sandwich, with all kinds of spices' , price: 5}) %> 
+          <!-- product number 11 - end -->
+          <!-- product number 12 - start -->
+          <%- include('product' , {img: '/products-imgs/cream-pastry.jpg' , name: 'cream pastry' , number: 12
+          , description: 'Pastry stuffed with extra sweet cream pudding' , price: 3}) %> 
+          <!-- product number 12 - end -->
+        </div>
+      </div>
+      <!-- line number 4 - end -->
+      <br><br>
+      <!-- line number 5 - start -->
+      <div class="container-fluid">
+        <div class="row">
+          <!-- product number 13 - start -->
+          <%- include('product' , {img: '/products-imgs/red-velvet-oreo-cake.jpg' , name: 'red velvet oreo cake' , number: 13
+          , description: 'Red Velvet oreo cake with cream and cookie crumbs' , price: 17}) %> 
+          <!-- product number 13 - end -->
+          <!-- product number 14 - start -->
+          <%- include('product' , {img: '/products-imgs/vegetable-sandwich.webp' , name: 'Vegetable sandwich' , number: 14
+          , description: 'A sandwich full of fresh and delicious vegetables' , price: 5}) %> 
+          <!-- product number 14 - end -->
+          <!-- product number 15 - start -->
+          <%- include('product' , {img: '/products-imgs/puff-pastry.jpg' , name: 'puff pastry' , number: 15
+          , description: 'sweet puff pastry filled with vanilla cream' , price: 3}) %> 
+          <!-- product number 15 - end -->
+        </div>
+      </div>
+      <!-- line number 5 - end -->
+    </div>
+    <!-- products substance - end -->
+    <br><br><br><br><br>  
+    <%- include('footer') %> <!-- the footer -->
+    <script>
+        let sumOfProductsArr = [0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0];
+        let costOfProductsArr = [13 , 5 , 3 , 13 , 4 , 6 , 17 , 5 , 3 , 10 , 5 , 3 , 17 , 5 , 3];
+        let plusButtons = document.querySelectorAll('button.fa-plus');
+        let minusButtons = document.querySelectorAll('button.fa-minus');
+        let numberScreens = document.querySelectorAll('span.show-num');
+
+        for(let i = 0 ; i < plusButtons.length ; i++)
+        {
+          plusButtons[i].onclick = function()
+            {
+                sumOfProductsArr[i]++;
+                numberScreens[i].textContent = sumOfProductsArr[i];
+            }
+        }
+
+        for(let i = 0 ; (i < minusButtons.length) ; i++)
+        {
+            minusButtons[i].onclick = function()
+            {
+              sumOfProductsArr[i]--;
+              if(sumOfProductsArr[i] < 0)
+                sumOfProductsArr[i] = 0;
+              else
+                numberScreens[i].textContent = sumOfProductsArr[i];
+            }
+        }
+    </script>
+  </body>
+</html>

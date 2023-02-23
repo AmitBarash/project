@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>purple Macron Bakery - events</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/assets/allStyle.css">
+    <link rel="icon" href="/images/bakery-logo.jpg">
+    <style>
+      #comment
+      {
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body style="background-image: url('/images/background.jpg');">
+    <%- include('header') %> 
+    <br><br>
+    <div class="container-fluid">
+      <div class="row center">
+        <div class="col-3"></div>
+        <!-- <img class="col-6 center" src="/images/events-logo.png" alt="events"> -->
+        <div class="col-3"></div>
+      </div>
+    </div>
+    <br>
+
+    <div class="margin-top">
+    <!-- products substance -->
+      <div class="container-fluid">
+        <div class="row center">
+          <div class="col-4 center">
+            <h4>WEDDING🥂</h4>
+          </div>
+          <div class="col-4 center">
+            <h4>BAR MITZVAH / BAT MITZVAH🎈</h4>
+          </div>
+          <div class="col-4 center">
+            <h4>BIRTHDAY🎉</h4>
+          </div>
+        </div>
+      </div>
+      <!-- line number 1 -->
+      <div class="container-fluid">
+        <div class="row center">
+          <!-- product number 1 -->
+          <%- include('product' , {img: "/events-imgs/classic-wedding-cake(1).webp", name: 'classic wedding cake' , number: 1
+          , description: 'A classic, delicate and floral cake for a wedding' , price: 460}) %> 
+          <!-- end of roduct number 1 -->
+          <!-- product number 2 -->
+          <%- include('product' , {img: "/events-imgs/bat-mitzva-cake(1).jpg", name: 'A "12" Bat Mitzva cake' , number: 2
+          , description: 'A "Bat Mitzva" cake formed as 12 - the most trend today!' , price: 250}) %> 
+          <!-- end of product number 2 -->
+          <!-- product number 3 -->
+          <%- include('product' , {img: "/events-imgs/birthday-cake(1).jpg", name: 'exclusive birthday cake' , number: 3
+          , description: 'sweet, delicious and recommended birthday cake' , price: 100}) %> 
+          <!-- end of product number 3 -->
+        </div>
+      </div>
+      <!-- end of line number 1 -->
+
+      <br><br>
+
+      <!-- line number 2 -->
+      <div class="container-fluid">
+        <div class="row">
+          <!-- product number 4 -->
+          <%- include('product' , {img: "/events-imgs/layered-wedding-cake(2).jpg", name: '4 floors wedding cake' , number: 4
+          , description: 'A classic and special layered cake - floral, in gold' , price: 510}) %> 
+          <!-- end of product number 4 -->
+          <!-- product number 5 -->
+          <%- include('product' , {img: "/events-imgs/bar-mitzva-cake(2).jpg", name: 'tffilin formed cake' , number: 5
+          , description: 'A Bar Mitzva cake - tffilin with sugar dough' , price: 350}) %> 
+          <!-- end of product number 5 -->
+          <!-- product number 6 -->
+          <%- include('product' , {img: "/events-imgs/birthday-cake(2).jpg", name: '"Goldie" birthday cake' , number: 6
+          , description: '"Goldie" cake for birthdays, a simple and special cake' , price: 90}) %> 
+          <!-- end of product number 6 -->
+          </div>
+        </div>
+      </div>
+      <!-- end of line number 2 -->
+
+      <br><br>
+
+      <!-- line number 3 -->
+      <div class="container-fluid">
+        <div class="row">
+          <!-- product number 7 -->
+          <%- include('product' , {img: "/events-imgs/wedding-cake(3).jpg", name: 'dolly wedding cake' , number: 7
+          , description: 'layered wedding cake with bride andgroom on top of it' , price: 500}) %> 
+          <!-- end of product number 7 -->
+          <!-- product number 8 -->
+          <%- include('product' , {img: "/events-imgs/bat-mitzva-cake(3).jpg", name: 'layered Bat Mitzva cake' , number: 8
+          , description: 'special layered cake for Bat Mitzva events' , price: 105}) %> 
+          <!-- end of product number 8 -->
+          <!-- product number 9 -->
+          <%- include('product' , {img: "/events-imgs/birthday-cake(3).jpg", name: 'sweet birthday cake' , number: 9
+          , description: ' ferrero roshe and dough sugar covered birthday cake' , price: 100}) %> 
+          <!-- end of product number 9 -->
+        </div>
+      </div>
+      <!-- end of line number 3 -->
+
+      <br><br>
+
+      <!-- line number 4 -->
+      <div class="container-fluid">
+        <div class="row">
+          <!-- product number 10 -->
+          <%- include('product' , {img: "/events-imgs/wedding-cake(4).jpg", name: 'layered wedding cake' , number: 10
+          , description: 'upgrade your event with this wonderful wedding cake' , price: 540}) %> 
+          <!-- end of product number 10 -->
+          <!-- product number 11 -->
+          <%- include('product' , {img: "/events-imgs/bar-mitzva-cake(4).jpg", name: 'jewish Bar Mitzva cake' , number: 11
+          , description: 'A Bar Mitzv cake formed like tffilin and the western wall' , price: 500}) %> 
+          <!-- end of product number 11 -->
+          <!-- product number 12 -->
+          <%- include('product' , {img: "/events-imgs/birthday-cake(4).jpg", name: 'sweet birthday cake' , number: 12
+          , description: 'dough sugar unicorn form birthday cake for children' , price: 60}) %> 
+          <!-- end of product number 12 -->
+        </div>
+      </div>
+      <!-- end of line number 4 -->
+      </div>
+      <br><br><br><br><br>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3"></div>
+          <div id="comments" class="col-6">
+            <input id="comment" placeholder="leave your comment here!">
+            <br><br>
+            <button id="submitButton">submit</button>
+            <span id="output"></span>
+          </div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+    <br><br><br>
+    <!-- end of the substance -->
+
+    <!-- footer -->
+    <%- include('footer') %> 
+    <!-- end of the footer -->
+    <script>
+      //how many are there of each product array
+      let sumOfProductsArr = [0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0];
+      //the price of each product array
+      let costOfProductsArr = [460 , 250 , 100 , 510 , 350 , 90 , 500 , 105 , 100 , 540 , 500 , 60];
+      let plusButtons = document.querySelectorAll('button.fa-plus');
+      let minusButtons = document.querySelectorAll('button.fa-minus');
+      let numberScreens = document.querySelectorAll('span.show-num');
+      for(let i = 0 ; i < plusButtons.length ; i++)
+      {
+          plusButtons[i].onclick = function()
+          {
+              sumOfProductsArr[i]++;
+              numberScreens[i].textContent = sumOfProductsArr[i];
+          }
+      }
+      
+      for(let i = 0 ; (i < minusButtons.length) ; i++)
+      {
+          minusButtons[i].onclick = function()
+          {
+              sumOfProductsArr[i]--;
+              if(sumOfProductsArr[i] < 0)
+                  sumOfProductsArr[i] = 0;
+              else
+                  numberScreens[i].textContent = sumOfProductsArr[i];
+          }
+      }
+      
+      submitButton.onclick = function()
+      {
+          let val = commentInput.value;
+          commentInput.value = '';
+          if(val == '')
+          {
+              output.innerText = 'you did not write any comment';
+          }
+          else
+          {
+              output.innerHTML = 'your comment: ' + '<b>' + val + '</b>';
+          }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
+</html>

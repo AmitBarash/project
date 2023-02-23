@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/allStyle.css">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <div class="col-4 center">
+            <div class="flip-card product-img">
+                <div class="flip-card-inner product-img">
+                    <div class="flip-card-front product-img">
+                        <img class="product-img " src="/images<%= img %> " alt='<%= name %>'>
+                    </div>
+                    <div class="flip-card-back">
+                        <div>
+                            <h4><%= name %> </h4>
+                            <p><%= description %> </p>
+                            <p>price: <%= price %>$</p>
+                        </div>
+                        <div>
+                            <button class="fa fa-plus add-remove-btn" id="add<%= number %>"></button>
+                            &nbsp;
+                            <span class="show-num" id="number<%= number %>">0</span>
+                            &nbsp;
+                            <button class="fa fa-minus add-remove-btn" id="remove<%= number %>"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
