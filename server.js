@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-require('dotenv').config();
 const app = express();
 
 app.set('view engine' , 'ejs');
@@ -53,7 +52,6 @@ client.connect(err => {
     });
     app.get('/' , (req , res) => {
         res.status(200).render('homePage');
-        console.log(process.env.MESSAGE)
     });
     app.get('/about' , (req , res) => {
         res.status(200).render('about');
